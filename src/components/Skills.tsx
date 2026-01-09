@@ -2,16 +2,16 @@ import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
 
 const skills = [
-  { name: 'HTML5', level: 95, category: 'core' },
-  { name: 'CSS3', level: 90, category: 'core' },
-  { name: 'JavaScript (ES6+)', level: 88, category: 'core' },
-  { name: 'React', level: 80, category: 'framework' },
-  { name: 'TypeScript', level: 75, category: 'framework' },
-  { name: 'Responsive Design', level: 92, category: 'design' },
-  { name: 'Tailwind CSS', level: 85, category: 'design' },
-  { name: 'Git & GitHub', level: 82, category: 'tools' },
-  { name: 'REST APIs', level: 78, category: 'tools' },
-  { name: 'Figma', level: 70, category: 'design' },
+  { name: 'HTML5', category: 'core' },
+  { name: 'CSS3', category: 'core' },
+  { name: 'JavaScript (ES6+)', category: 'core' },
+  { name: 'React', category: 'framework' },
+  { name: 'TypeScript', category: 'framework' },
+  { name: 'Responsive Design', category: 'design' },
+  { name: 'Tailwind CSS', category: 'design' },
+  { name: 'Git & GitHub', category: 'tools' },
+  { name: 'REST APIs', category: 'tools' },
+  { name: 'Figma', category: 'design' },
 ];
 
 const categories = [
@@ -60,30 +60,22 @@ const Skills = () => {
                 {category.name}
               </h3>
 
-              <div className="space-y-5">
+              <div className="flex flex-wrap gap-2">
                 {skills
                   .filter((skill) => skill.category === category.id)
                   .map((skill, index) => (
-                    <div key={skill.name}>
-                      <div className="flex justify-between items-center mb-2">
-                        <span className="text-sm font-medium">{skill.name}</span>
-                        <span className="text-xs text-muted-foreground font-mono">
-                          {skill.level}%
-                        </span>
-                      </div>
-                      <div className="skill-bar">
-                        <motion.div
-                          className={`skill-bar-fill bg-gradient-to-r ${category.color}`}
-                          initial={{ width: 0 }}
-                          animate={isInView ? { width: `${skill.level}%` } : {}}
-                          transition={{
-                            duration: 1,
-                            delay: 0.3 + catIndex * 0.1 + index * 0.1,
-                            ease: 'easeOut',
-                          }}
-                        />
-                      </div>
-                    </div>
+                    <motion.span
+                      key={skill.name}
+                      initial={{ opacity: 0, scale: 0.8 }}
+                      animate={isInView ? { opacity: 1, scale: 1 } : {}}
+                      transition={{
+                        duration: 0.3,
+                        delay: 0.2 + catIndex * 0.1 + index * 0.05,
+                      }}
+                      className={`px-4 py-2 text-sm font-medium rounded-lg bg-gradient-to-r ${category.color} text-white`}
+                    >
+                      {skill.name}
+                    </motion.span>
                   ))}
               </div>
             </motion.div>
