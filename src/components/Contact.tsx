@@ -143,7 +143,7 @@ const Contact = () => {
         >
           <p className="text-primary font-mono text-sm mb-2">Get In Touch</p>
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Let's <span className="gradient-text">Connect</span>
+            Contact <span className="gradient-text">Me</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
             I'm currently looking for new opportunities. Whether you have a 
