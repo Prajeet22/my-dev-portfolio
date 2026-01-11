@@ -67,7 +67,7 @@ const Navbar = () => {
             }}
             className="text-2xl font-bold"
           >
-            <span className="gradient-text">&lt;Dev</span>
+            <span className="gradient-text">&lt;Portfolio</span>
             <span className="text-foreground">/&gt;</span>
           </a>
 

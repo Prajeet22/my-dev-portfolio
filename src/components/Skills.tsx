@@ -6,12 +6,12 @@ const skills = [
   { name: 'CSS3', category: 'core' },
   { name: 'JavaScript (ES6+)', category: 'core' },
   { name: 'React', category: 'framework' },
-  { name: 'TypeScript', category: 'framework' },
+  { name: 'Redux', category: 'framework' },
   { name: 'Responsive Design', category: 'design' },
   { name: 'Tailwind CSS', category: 'design' },
   { name: 'Git & GitHub', category: 'tools' },
   { name: 'REST APIs', category: 'tools' },
-  { name: 'Figma', category: 'design' },
+  { name: 'Canva', category: 'design' },
 ];
 
 const categories = [
@@ -91,7 +91,7 @@ const Skills = () => {
         >
           <p className="text-sm text-muted-foreground mb-4">Also familiar with:</p>
           <div className="flex flex-wrap justify-center gap-2">
-            {['Sass', 'Bootstrap', 'Webpack', 'npm', 'VS Code', 'Chrome DevTools', 'SEO Basics', 'Accessibility'].map(
+            {['Bootstrap', 'Webpack', 'npm', 'VS Code', 'Chrome DevTools', 'SEO Basics', 'Accessibility'].map(
               (skill) => (
                 <span
                   key={skill}

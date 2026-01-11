@@ -32,7 +32,7 @@ const Hero = () => {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="text-4xl md:text-6xl lg:text-7xl font-bold mb-4"
           >
-            Alex <span className="gradient-text">Thompson</span>
+            Prajeet <span className="gradient-text">Shrivastava</span>
           </motion.h1>
 
           {/* Title */}
@@ -63,13 +63,6 @@ const Hero = () => {
             transition={{ duration: 0.5, delay: 0.4 }}
             className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12"
           >
-            <a href="#contact" className="btn-primary">
-              <Mail size={18} />
-              Hire Me
-            </a>
-            <a href="#projects" className="btn-outline">
-              View Projects
-            </a>
           </motion.div>
 
           {/* Social Links */}
@@ -80,7 +73,7 @@ const Hero = () => {
             className="flex items-center justify-center gap-6"
           >
             <a
-              href="https://github.com"
+              href="https://github.com/Prajeet22"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 rounded-full bg-card border border-border hover:border-primary hover:text-primary transition-all duration-300 card-hover"
@@ -89,7 +82,7 @@ const Hero = () => {
               <Github size={20} />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/prajeet-shrivastava-72b138319/"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 rounded-full bg-card border border-border hover:border-primary hover:text-primary transition-all duration-300 card-hover"
@@ -97,13 +90,8 @@ const Hero = () => {
             >
               <Linkedin size={20} />
             </a>
-            <a
-              href="mailto:alex@example.com"
-              className="p-3 rounded-full bg-card border border-border hover:border-primary hover:text-primary transition-all duration-300 card-hover"
-              aria-label="Email"
-            >
-              <Mail size={20} />
-            </a>
+
+
           </motion.div>
         </div>
 

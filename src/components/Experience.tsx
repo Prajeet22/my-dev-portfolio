@@ -6,41 +6,41 @@ const experiences = [
   {
     type: 'work',
     title: 'Frontend Developer Intern',
-    organization: 'TechStart Solutions',
-    period: 'Jun 2024 - Aug 2024',
+    organization: 'Zenstack Private Limited',
+    period: 'May 2025 - July 2025',
     description: 'Developed responsive web interfaces using React and Tailwind CSS. Collaborated with the design team to implement pixel-perfect UI components and improved website performance by 30%.',
-    skills: ['React', 'Tailwind CSS', 'JavaScript'],
+    skills: ['Html', 'CSS', 'JavaScript','SQL'],
   },
   {
     type: 'education',
-    title: 'Bachelor of Computer Science',
-    organization: 'State University',
-    period: '2020 - 2024',
-    description: 'Graduated with honors. Focused on web development, data structures, and software engineering. Completed multiple projects in web technologies.',
-    skills: ['Web Development', 'Algorithms', 'Software Engineering'],
+    title: 'B.Tech Electrical Engineering',
+    organization: 'SGSITS,Indore',
+    period: '2022 - 2026',
+    description: 'Graduated with honors in Electrical Engineering. Focused on core subjects including circuit analysis, power systems, and electronics.',
+    skills: ['Web Development', 'Matlab', 'Software Engineering'],
   },
 ];
 
 const certifications = [
   {
-    title: 'Responsive Web Design',
-    issuer: 'freeCodeCamp',
+    title: 'Front-end Domination',
+    issuer: 'Sheryians Coding School',
     date: '2024',
   },
   {
-    title: 'JavaScript Algorithms',
-    issuer: 'freeCodeCamp',
+    title: 'Microsoft Power BI Desktop',
+    issuer: 'Udemy',
     date: '2024',
   },
   {
-    title: 'React Fundamentals',
-    issuer: 'Coursera',
-    date: '2024',
-  },
-  {
-    title: 'Git & GitHub',
+    title: 'The Complete Python Bootcamp',
     issuer: 'Udemy',
     date: '2023',
+  },
+  {
+    title: 'SQL',
+    issuer: 'Scaler',
+    date: '2025',
   },
 ];
 
