@@ -64,7 +64,7 @@ const Experience = () => {
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
             My academic background and professional experience that have shaped 
-            my skills as a frontend developer.
+            my skills as a web developer.
           </p>
         </motion.div>
 

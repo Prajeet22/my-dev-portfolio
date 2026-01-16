@@ -42,7 +42,7 @@ const Hero = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-2xl md:text-3xl lg:text-4xl font-semibold text-muted-foreground mb-6"
           >
-            Frontend Web Developer
+           Web Developer
           </motion.h2>
 
           {/* Tagline */}
@@ -52,8 +52,8 @@ const Hero = () => {
             transition={{ duration: 0.5, delay: 0.3 }}
             className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10"
           >
-            I build fast, responsive, and user-friendly web interfaces that deliver 
-            exceptional digital experiences.
+            I develop end-to-end web applications using modern frontend and backend technologies.
+            From clean UI to reliable APIs, I deliver complete digital solutions.
           </motion.p>
 
           {/* CTA Buttons */}

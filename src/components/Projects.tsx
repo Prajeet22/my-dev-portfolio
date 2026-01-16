@@ -23,6 +23,16 @@ const projects = [
     image: '/job.png',
     featured: true,
   },
+  {
+    title: 'E-commerce Platform',
+    description:
+      'A full-stack e-commerce web app with product browsing, cart functionality, and responsive UI.',
+    tech: ['React', 'Tailwind CSS', 'Node.js', 'Express.js','MongoDB'],
+    liveUrl: 'https://e-commerce-one-swart-51.vercel.app/',
+    githubUrl: 'https://github.com/Prajeet22/E-commerce',
+    image: '/ecommerce.png',
+    featured: true,
+  }
 ];
 
 const Projects = () => {
@@ -44,80 +54,82 @@ const Projects = () => {
             Featured <span className="gradient-text">Projects</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            A selection of projects that highlight my frontend development skills
-            and UI expertise.
+            A selection of projects that highlight my development skills, from frontend interfaces to backend logic.
           </p>
         </motion.div>
 
         {/* Projects Grid */}
         <div ref={ref} className="grid md:grid-cols-2 gap-6 lg:gap-8">
-          {projects.map((project, index) => (
-            <motion.article
-              key={project.title}
-              initial={{ opacity: 0, y: 30 }}
-              animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="project-card group"
-            >
-              {/* Image Preview */}
-              <div className="relative aspect-video overflow-hidden">
-                {project.image ? (
+          {projects.map((project, index) => {
+            const isLastOdd =
+              projects.length % 2 !== 0 && index === projects.length - 1;
+
+            return (
+              <motion.article
+                key={project.title}
+                initial={{ opacity: 0, y: 30 }}
+                animate={isInView ? { opacity: 1, y: 0 } : {}}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                className={`project-card group
+                  ${isLastOdd ? 'md:col-span-2 md:max-w-[560px] md:mx-auto' : ''}
+                `}
+              >
+                {/* Image */}
+                <div className="relative aspect-video overflow-hidden">
                   <img
                     src={project.image}
                     alt={project.title}
                     className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
                   />
-                ) : (
-                  <div className="h-full w-full bg-gradient-to-br from-primary/20 to-primary/5" />
-                )}
 
-                {/* Hover Overlay */}
-                <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">
-                  <a
-                    href={project.githubUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="btn-outline"
-                  >
-                    <Github size={18} />
-                    Code
-                  </a>
-                  <a
-                    href={project.liveUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="btn-primary"
-                  >
-                    <ExternalLink size={18} />
-                    Live
-                  </a>
-                </div>
-              </div>
-
-              {/* Project Info */}
-              <div className="p-6">
-                <h3 className="text-xl font-bold mb-2 group-hover:text-primary transition-colors">
-                  {project.title}
-                </h3>
-
-                <p className="text-muted-foreground text-sm mb-4 line-clamp-3">
-                  {project.description}
-                </p>
-
-                {/* Tech Stack */}
-                <div className="flex flex-wrap gap-2">
-                  {project.tech.map((tech) => (
-                    <span
-                      key={tech}
-                      className="px-2 py-1 text-xs font-mono bg-primary/10 text-primary rounded"
+                  {/* Hover Overlay */}
+                  <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">
+                    <a
+                      href={project.githubUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn-outline"
                     >
-                      {tech}
-                    </span>
-                  ))}
+                      <Github size={18} />
+                      Code
+                    </a>
+                    <a
+                      href={project.liveUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn-primary"
+                    >
+                      <ExternalLink size={18} />
+                      Live
+                    </a>
+                  </div>
                 </div>
-              </div>
-            </motion.article>
-          ))}
+
+                {/* Info */}
+                <div className="p-6">
+                  <h3 className="text-xl font-bold mb-2 group-hover:text-primary transition-colors">
+                    {project.title}
+                  </h3>
+
+                  <p className="text-muted-foreground text-sm mb-4 line-clamp-3">
+                    {project.description}
+                  </p>
+
+                  {/* Tech */}
+                  <div className="flex flex-wrap gap-2">
+                    {project.tech.map((tech) => (
+                      <span
+                        key={tech}
+                        className="px-2 py-1 text-xs font-mono bg-primary/10 text-primary rounded"
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              </motion.article>
+            );
+          })}
         </div>
       </div>
     </section>

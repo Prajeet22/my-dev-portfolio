@@ -67,10 +67,8 @@ const About = () => {
 
             <div className="space-y-4 text-muted-foreground mb-8">
               <p>
-                I&apos;m a Frontend Web Developer who loves building clean,
-                responsive, and user-focused web applications. I specialize in
-                translating designs into high-quality interfaces using modern
-                frontend technologies.
+                I&apos;m a Web Developer who loves building clean, scalable, and user-focused web applications.
+I specialize in developing responsive frontends and reliable backends using modern web technologies.
               </p>
               <p>
                 I focus on performance, accessibility, and smooth user
