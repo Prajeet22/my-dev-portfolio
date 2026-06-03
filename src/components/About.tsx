@@ -42,14 +42,19 @@ const About = () => {
               <div className="absolute inset-4 border-2 border-primary/20 rounded-2xl" />
               <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-transparent rounded-2xl" />
 
-              {/* Image Container - Removed padding and centering so image fits fully */}
-              <div className="absolute inset-8 bg-card rounded-xl overflow-hidden shadow-xl">
-                <img 
-                  src="/frontend.png" 
-                  alt="Frontend Developer Workspace" 
-                  className="w-full h-full object-cover"
-                />
-              </div>
+              {/* Image Container */}
+<div className="absolute inset-8 bg-card rounded-xl overflow-hidden shadow-xl">
+  <img
+    src="/frontend.png"
+    alt="Frontend Developer Workspace"
+    loading="eager"
+    fetchPriority="high"
+    decoding="async"
+    width={600}
+    height={600}
+    className="w-full h-full object-cover"
+  />
+</div>
             </div>
           </motion.div>
 
