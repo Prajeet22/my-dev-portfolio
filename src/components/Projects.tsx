@@ -18,7 +18,7 @@ const projects = [
     description:
       'An AI-powered job application tracker featuring pipeline analytics and real-time resume scoring."',
     tech: ['React', 'Tailwind CSS', 'Chart.js','Supabase'],
-    liveUrl: 'https://job-tracker-webapp.netlify.app/',
+    liveUrl: 'https://job-tracker-mu-black.vercel.app/',
     githubUrl: 'https://github.com/Prajeet22/job-tracker',
     image: '/job.png',
     featured: true,
