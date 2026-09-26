@@ -16,7 +16,7 @@ const projects = [
   {
     title: 'Job Tracker & AI Resume Analyzer',
     description:
-      'An AI-powered job application tracker featuring pipeline analytics and real-time resume scoring."',
+      'A job application tracker with status tracking and AI-powered resume scoring.',
     tech: ['React', 'Tailwind CSS', 'Chart.js','Supabase'],
     liveUrl: 'https://job-tracker-mu-black.vercel.app/',
     githubUrl: 'https://github.com/Prajeet22/job-tracker',
