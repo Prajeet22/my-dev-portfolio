@@ -18,7 +18,7 @@ const projects = [
     description:
       'A smart job application tracking dashboard with analytics, status filters, and clean UI.',
     tech: ['React', 'Tailwind CSS', 'Chart.js','Supabase'],
-    liveUrl: 'https://job-tracker-webapp.netlify.app/',
+    liveUrl: 'job-tracker-mu-black.vercel.app',
     githubUrl: 'https://github.com/Prajeet22/job-tracker',
     image: '/job.png',
     featured: true,
